@@ -1,6 +1,7 @@
 name: deploy
 
 on:
+  workflow_dispatch:
   schedule:
     # At the end of every day
     - cron: "0 0 * * *"
