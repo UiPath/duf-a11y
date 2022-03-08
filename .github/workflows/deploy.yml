@@ -26,11 +26,8 @@ jobs:
         with:
           node-version: "14.x"
 
-      - name: Restore dependencies
-        run: npm ci
-
-      - name: Restore Storybook dependencies
-        run: npm --prefix ./storybook/ ci
+      - name: Restore all dependencies
+        run: npm ci:all
 
       - name: Build Storybook
         run: npm run build:storybook
