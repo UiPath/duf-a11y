@@ -27,7 +27,7 @@ jobs:
           node-version: "14.x"
 
       - name: Restore all dependencies
-        run: npm ci:all
+        run: npm run ci:all
 
       - name: Build Storybook
         run: npm run build:storybook
